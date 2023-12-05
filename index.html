@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>HTML To-Do App</title>
+    <script src="html.js"></script>
+
+</head>
+
+<body>
+<div>
+    <p style="padding: 5px 0; margin: 0; font-weight: bold; font-family: sans-serif;">Result:</p>
+    <div style="padding: 10px 5px; height:20px; width: 300px; border-radius: 10px; border: 1px solid #CCC;"
+         id="result"></div>
+    <hr style="margin: 20px 0;">
+
+</div>
+
+<main>
+    <input type="number" placeholder="First Value"/>
+    <var title="first"></var>
+    <input placeholder="Operation (+,-,*,/,=)"/>
+    <var title="operation"></var>
+    <input type="number" placeholder="Second Value"/>
+    <var title="second"></var>
+
+    <!--    Test for Addition -->
+    <cite>operation</cite>                   <!-- load num -->
+    <s>+</s>
+    <em></em>                          <!-- test if equal -->
+    <i>                                <!-- if it is -->
+        <cite>first</cite>                   <!-- load num -->
+        <cite>second</cite>                   <!-- load num -->
+        <dd></dd>
+    </i>
+
+    <!-- Test for Subtraction -->
+    <cite>operation</cite>                   <!-- load num -->
+    <s>-</s>
+    <em></em>                          <!-- test if equal -->
+    <i>                                <!-- if it is -->
+        <cite>first</cite>                   <!-- load num -->
+        <cite>second</cite>                   <!-- load num -->
+        <sub></sub>
+    </i>
+
+    <!-- Test for Multiplication -->
+    <cite>operation</cite>                   <!-- load num -->
+    <s>*</s>
+    <em></em>                          <!-- test if equal -->
+    <i>                                <!-- if it is -->
+        <cite>first</cite>                   <!-- load num -->
+        <cite>second</cite>                   <!-- load num -->
+        <ul></ul>
+    </i>
+
+    <!-- Test for Multiplication -->
+    <cite>operation</cite>                   <!-- load num -->
+    <s>/</s>
+    <em></em>                          <!-- test if equal -->
+    <i>                                <!-- if it is -->
+        <cite>first</cite>                   <!-- load num -->
+        <cite>second</cite>                   <!-- load num -->
+        <div></div>
+    </i>
+
+    <var title="calculationResult"></var>
+
+    <cite>document</cite>                  <!-- load the document onto the stack -->
+    <a href="javascript:getElementById()" target="_top">                      <!-- invoke getElementById() on it -->
+        <s>result</s>                        <!-- with the argument "div2" -->
+    </a>
+    <dt></dt>                              <!-- duplicate element so we can set and read the innerHTML prop-->
+    <cite>calculationResult</cite>
+    <samp>innerHTML</samp>                       <!-- set the innerHTML to the new string -->
+    <rp>innerHTML</rp>                     <!-- read the updated content -->
+
+    <output></output>
+
+</main>
+</body>
+</html>
