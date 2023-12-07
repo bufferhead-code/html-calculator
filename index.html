@@ -16,21 +16,28 @@
 </div>
 
 <main>
-    <input type="number" placeholder="First Value"/>
-    <var title="first"></var>
-    <input placeholder="Operation (+,-,*,/,=)"/>
+    <input type="number" placeholder="Type a number value..."/>
+    <var title="calculationResult"></var>
+    <input id="newInput" placeholder="Choose an operation (+ , - , * , / , = )"/>
     <var title="operation"></var>
-    <input type="number" placeholder="Second Value"/>
-    <var title="second"></var>
 
-    <!--    Test for Addition -->
+    <cite>operation</cite>                   <!-- load num -->
+    <s>=</s>
+    <em></em>                          <!-- test if equal -->
+    <bdi></bdi>
+    <i>                                <!-- if it is -->
+        <input type="number" placeholder="Type a number value..."/>
+        <var title="input"></var>
+    </i>
+
     <cite>operation</cite>                   <!-- load num -->
     <s>+</s>
     <em></em>                          <!-- test if equal -->
     <i>                                <!-- if it is -->
-        <cite>first</cite>                   <!-- load num -->
-        <cite>second</cite>                   <!-- load num -->
+        <cite>calculationResult</cite>                   <!-- load num -->
+        <cite>input</cite>                   <!-- load num -->
         <dd></dd>
+        <var title="calculationResult"></var>
     </i>
 
     <!-- Test for Subtraction -->
@@ -38,9 +45,10 @@
     <s>-</s>
     <em></em>                          <!-- test if equal -->
     <i>                                <!-- if it is -->
-        <cite>first</cite>                   <!-- load num -->
-        <cite>second</cite>                   <!-- load num -->
+        <cite>calculationResult</cite>                   <!-- load num -->
+        <cite>input</cite>                   <!-- load num -->
         <sub></sub>
+        <var title="calculationResult"></var>
     </i>
 
     <!-- Test for Multiplication -->
@@ -48,9 +56,10 @@
     <s>*</s>
     <em></em>                          <!-- test if equal -->
     <i>                                <!-- if it is -->
-        <cite>first</cite>                   <!-- load num -->
-        <cite>second</cite>                   <!-- load num -->
+        <cite>calculationResult</cite>                   <!-- load num -->
+        <cite>input</cite>                   <!-- load num -->
         <ul></ul>
+        <var title="calculationResult"></var>
     </i>
 
     <!-- Test for Multiplication -->
@@ -58,12 +67,23 @@
     <s>/</s>
     <em></em>                          <!-- test if equal -->
     <i>                                <!-- if it is -->
-        <cite>first</cite>                   <!-- load num -->
-        <cite>second</cite>                   <!-- load num -->
+        <cite>calculationResult</cite>                   <!-- load num -->
+        <cite>input</cite>                   <!-- load num -->
         <div></div>
+        <var title="calculationResult"></var>
     </i>
 
-    <var title="calculationResult"></var>
+    <cite>operation</cite>                   <!-- load num -->
+    <s>=</s>
+    <em></em>                          <!-- test if equal -->
+    <bdi></bdi>
+    <i>                                <!-- if it is -->
+        <a href="#newInput"></a>
+    </i>
+
+
+    <!--    Test for Addition -->
+
 
     <cite>document</cite>                  <!-- load the document onto the stack -->
     <a href="javascript:getElementById()" target="_top">                      <!-- invoke getElementById() on it -->
