@@ -15,6 +15,12 @@
 
 </div>
 
+<script type="text/javascript">
+    html.meta.out = function (value) {
+        const result = document.getElementById("result");
+        result.innerHTML = value;
+    }
+</script>
 <main>
     <input type="number" placeholder="Type a number value..."/>
     <var title="calculationResult"></var>
@@ -84,16 +90,7 @@
 
     <!--    Test for Addition -->
 
-
-    <cite>document</cite>                  <!-- load the document onto the stack -->
-    <a href="javascript:getElementById()" target="_top">                      <!-- invoke getElementById() on it -->
-        <s>result</s>                        <!-- with the argument "div2" -->
-    </a>
-    <dt></dt>                              <!-- duplicate element so we can set and read the innerHTML prop-->
     <cite>calculationResult</cite>
-    <samp>innerHTML</samp>                       <!-- set the innerHTML to the new string -->
-    <rp>innerHTML</rp>                     <!-- read the updated content -->
-
     <output></output>
 
 </main>
